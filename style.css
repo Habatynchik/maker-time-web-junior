@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: beige;
+    font-family: "Lato", sans-serif;
+    background-color: #f6f7d7;
+    color: #2a363b;
+}
+
+.todo-list {
+    border: 1px solid green;
+    background-color: rgb(245, 243, 220);
+    border-radius: 15px;
+    width: 50%;
+    margin-top: 20vh;
+}
+
+.heading {
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.input-form {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+    align-items: center;
+}
+
+.task-btn {
+    min-width: 4rem;
+    border: none;
+    outline: none;
+    padding: 0.59rem 0.9rem;
+    background-color: #ff9900;
+}
+
+.task-input {
+    width: 30rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    background-color: #ff990091;
+    font-size: 1rem;
+}
+
+.tasks-list {
+    margin: 2rem;
+}
+.task-input,
+.task-btn-edit {
+    border-radius: 7px 0 0 7px;
+}
+
+.task-btn-submit,
+.task-btn-done {
+    border-radius: 0px 7px 7px 0px;
+}
+
+.task-btn:hover {
+    background-color: #e68b03;
+}
+
+.task-btn-clear {
+    border-radius: 7px;
+}
+.tasks-list li {
+    display: flex;
+    justify-content: end;
+}
+
+.tasks-list .task {
+    width: 90%;
+}
+.task-description {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.task-clear {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.task[isDone="true"] {
+    color: rgba(0, 0, 0, 0.178);
+    text-decoration: line-through;
+}
+
+.task-btn-done{
+    min-width: 5rem;
+}
